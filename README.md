@@ -11,7 +11,7 @@ TRUNCATE TABLE([Emoji])
 PAUSE INDEXES([Emoji])
 
   //Miscellaneous Symbols and Pictographs
-Create_emoji_images (0x0001F300;0x0001F5FF;32;1024)
+CREATE_EMOJI_IMAGES (0x0001F300;0x0001F5FF;32;1024)
 
 RESUME INDEXES([Emoji])
 ```

@@ -14,4 +14,4 @@ $image:=$image1/$image2
 SET PICTURE TO PASTEBOARD($image)
 ```
 
-![https://github.com/miyako/4d-component-emoji/blob/master/emoji/images/1.png]
+![screenshot](https://github.com/miyako/4d-component-emoji/blob/master/emoji/images/1.png)

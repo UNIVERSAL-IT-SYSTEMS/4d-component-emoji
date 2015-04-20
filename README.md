@@ -1,22 +1,17 @@
-# 4d-tips-emoji
+# 4d-component-emoji
 Database of rasterised Unicode emoji on Mac and Windows.
 
 Example
 ---
 
-Pass starting code-point, ending code-point, thumbnail size, image size. 
 ```
-TRUNCATE TABLE([Emoji])
+$image1:=Get_emoji_image (0x0001F300;"Windows")
 
-PAUSE INDEXES([Emoji])
+$image2:=Get_emoji_image (0x0001F300;"MacOS")  //default platform
 
-  //Miscellaneous Symbols and Pictographs
-CREATE_EMOJI_IMAGES (0x0001F300;0x0001F5FF;32;1024)
+$image:=$image1/$image2
 
-RESUME INDEXES([Emoji])
+SET PICTURE TO PASTEBOARD($image)
 ```
 
-Create a single image
-```
-$image:=Create_emoji_image ($code;$size)
-```
+![]
